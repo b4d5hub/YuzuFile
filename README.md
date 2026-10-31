@@ -17,8 +17,6 @@ YuzuFile lives in the system tray. Right-click to select PDFs, or drag files in 
 
 <p align="center">
   <img src="docs/screenshots/current/tool-wheel.png" width="220" alt="Tool Wheel" />
-  <img src="docs/screenshots/current/tray-menu.png" width="260" alt="Tray Menu" />
-  <img src="docs/screenshots/current/workspace.png" width="340" alt="Current Arrange pages editor" />
 </p>
 
 > **Status:** Desktop beta `0.27.0`. Windows x64 is the supported target.
