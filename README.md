@@ -16,7 +16,7 @@ A local-first Windows desktop toolbox for PDF and document recognition, conversi
 YuzuFile lives in the system tray. Right-click to select PDFs, or drag files in Explorer and tap **Shift** to summon a floating tool wheel. Every operation runs locally on your machine — no cloud uploads, no API keys, no internet required after setup.
 
 <p align="center">
-  <img src="docs/screenshots/current/tool-wheel.png" width="220" alt="Tool Wheel" />
+  <img src="docs/screenshots/current/tool-wheel.png" width="350" alt="Tool Wheel" />
 </p>
 
 > **Status:** Desktop beta `0.27.0`. Windows x64 is the supported target.
