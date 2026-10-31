@@ -1,0 +1,36 @@
+{
+  "repository": "storytracer/squiddleocr",
+  "revision": "0e05fbe9d0a2df35871ccbe881c0c3d1380fcdd5",
+  "source_doi": "10.5281/zenodo.21788410",
+  "license": "Apache-2.0",
+  "files": {
+    "dict.txt": {
+      "sha256": "0b7c71199be609f1ceedb20d0e2bc136ad8f2a0beee4bb80e6903b444b0560f9",
+      "bytes": 5615
+    },
+    "inference.onnx": {
+      "sha256": "518414e36752dc69f2205e962a219ab5098fdc2fdab31a074c8508f55737e529",
+      "bytes": 64149038
+    },
+    "inference.yml": {
+      "sha256": "602938b0189ba02a1e2936c24dbf2e2e82fc970ec2f6d3327586c6ca1b80ca4d",
+      "bytes": 12788
+    },
+    "LICENSE": {
+      "sha256": "a8ad31b1c3f40dca5a84119351b8fa8ddc868edd77fad8a8ebf6d8f2d16fa4ae",
+      "bytes": 11324
+    },
+    "MODEL_CARD.md": {
+      "sha256": "bb4f88eaa28a0905376208fd022866793185d2f262a8b3d6d54866356bd5104e",
+      "bytes": 32100
+    },
+    "NOTICE": {
+      "sha256": "76aba067144f9c93d2d2150afe51cfea26076b7656d00c7e1689ecb37c795add",
+      "bytes": 572
+    },
+    "squiddle.json": {
+      "sha256": "6c6d9beece85f25afa2477a8d52a99ab04f20d339426b60fb5524a0381cf310a",
+      "bytes": 69431
+    }
+  }
+}

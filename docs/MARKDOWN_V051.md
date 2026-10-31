@@ -1,0 +1,11 @@
+# Markdown text preservation — v0.5.1
+
+Reproduced the reported omission using the recent 15-page searchable PDF, read only. Existing text was extractable on all pages, but the old structured converter returned an empty string for the inspected page without an exception. Invisible GlyphLessFont OCR text coexisted with images and vector paths; disabling graphics segmentation restored structured text. The previous output contained 407 figure links while omitting the document text.
+
+The converter now explicitly accepts invisible text and small fonts, uses simplified graphics handling for GlyphLessFont OCR layers, and checks page-level alphanumeric character coverage (normalized for Unicode and case, excluding image markup and link destinations). An incomplete ordinary-page result is retried without graphics segmentation; incomplete or failed extraction falls back to that page's existing readable text and records a warning. Completely empty output is rejected whenever source text is available. Figure export and local-only processing are unchanged.
+
+57 tests passed, including new silent-empty, partial, image-only, invalid-result, graphics-retry, invisible-text, small-text and symbol-only cases. Existing OCR, compression, UI, history and process/file protections passed in the same full run.
+
+Reported-PDF retest: all 15 pages reused existing OCR (0 recognition pages), 54,761 Markdown characters, 100% aggregate normalized alphanumeric-character coverage, no conversion warnings, and an unchanged source hash. Character coverage is a content-loss check, not a guarantee of identical formatting or reading order. The regenerated result is in an isolated workspace library; the user's previous job/output was not overwritten.
+
+Packaged verification passed with developer runtimes removed from PATH, including a searchable OCR PDF with full-page graphics and no requested OCR languages. The actual reported PDF also passed through PDFai-worker.exe: 15 pages, 54,761 Markdown characters, 100% aggregate normalized alphanumeric-character coverage excluding figure markup/link destinations, 0 repeated OCR pages, no warnings, unchanged source hash (5.11 s in this run). GUI workflow, compression, output actions and portable ZIP CRC passed.

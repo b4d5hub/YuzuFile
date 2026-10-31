@@ -1,0 +1,11 @@
+SquiddleOCR model directory: squiddle_PP-OCRv6_medium_rec
+
+Source model: kraken PP-OCRv6 (medium) text recognition model
+Author(s):    Benjamin Kiessling (ALMAnaCH, Inria Paris)
+Licence:      Apache-2.0
+DOI:          https://doi.org/10.5281/zenodo.21788410
+
+The weights here are a format conversion (PyTorch safetensors -> ONNX with the
+kraken preprocessing folded into the graph) of the model above. Nothing was
+retrained. The "squiddle_" prefix identifies the packager, SquiddleOCR, and is
+not part of the author's naming. See MODEL_CARD.md for the original model card.

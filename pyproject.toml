@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yuzufile"
+version = "0.27.0"
+description = "Local document toolbox with on-device neural OCR, conversion, and visual page editing"
+requires-python = ">=3.11"
+dependencies = [
+  "PySide6-Essentials==6.12.0",
+  "PyMuPDF==1.28.2",
+  "pymupdf4llm==1.28.2",
+  "Pillow>=11,<14",
+  "platformdirs>=4.3,<5",
+  "psutil>=6.1,<8",
+  "Send2Trash>=1.8,<3",
+  "rapidocr[rtl]==3.10.0",
+  "rapid-layout==1.2.1",
+  "onnxruntime==1.31.0",
+  "indra-ocr==1.1.2",
+  "python-docx==1.2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3,<10"]
+build = ["pyinstaller>=6.16,<7"]
+
+[project.scripts]
+yuzufile = "yuzufile.cli:main"
+
+[project.gui-scripts]
+yuzufile-desktop = "yuzufile.ui:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,20 @@
+# Organize documents — staged implementation
+
+1. Page extraction foundation: validated page plans, source snapshots, page selection, source preservation, and a new organized PDF output. Verify extraction and unsafe/changed inputs before UI work.
+2. Visual page management: lazy thumbnails, multi-select, reorder, remove, rotate, undo/redo, and extracting selected pages. Verify actions and rendered output before adding merging.
+3. Merging: add PDFs to the same workspace, retain file/page provenance, combine pages in visible order, and remap supported bookmarks/links. Verify multiple inputs, forms, and missing inputs.
+4. Integration and delivery: Home entry point, output folders, queued worker execution, History/retry, responsive layout, packaged Windows executable, and final verification.
+
+All edits create a new PDF. Source files remain unchanged. The workspace is one dialog; Home and History remain the only main pages. Save PDF uses every remaining page; Extract selected uses only highlighted pages, in their current visible order. Organization does not run OCR, Markdown, compression, or spread splitting implicitly.
+
+## Delivered in v0.9.0
+
+Part 1 passed its extraction, native rendering, source integrity and invalid-input checks before UI work. Part 2 passed multi-select editing, drag reorder, rotation, extraction order and undo/redo checks before merging work. Part 3 passed interleaved multi-PDF merge, mixed sizes, bookmarks, links, forms and invalid-input checks before integration.
+
+The completed dialog is available from the Home upload header. Save PDF exports every remaining page; Extract selected exports only highlighted pages, in visible order. New PDFs can be added or dropped into the grid. Sources are snapshotted in the isolated worker; changed/missing inputs fail clearly rather than exporting a different document. A queueing failure preserves edits and the output folder can be changed inside the dialog. Native text/vectors/images and supported page annotations/forms are copied rather than rasterized. Supported internal links/bookmarks are remapped; links to removed pages are dropped with a warning. Duplicate form field names are renamed by PyMuPDF while preserving field values. Embedded document attachments are not copied and produce a warning. Existing password/signature restrictions apply.
+
+Thumbnails render only visible cards, one per UI event, with an 80-icon LRU cache. Export uses the selected performance profile, bounded page traversal and at most two open source PDFs. Workspace limits are 50 PDFs, 2,000 output pages and 1 GB combined input. Source snapshots are temporary; only the organized PDF and its manifest remain after success. Cancellation/failure uses the existing staged-output cleanup. Undo history is capped at 40 edits. Ctrl+Z/Ctrl+Shift+Z, Delete, and Alt+Left/Right complement the buttons.
+
+History schema migration 6 adds page_plan with an empty JSON default for old jobs. A dedicated organize mode preserves all old operation meanings. Job plans record source fingerprints, page origins, order and rotation; result metadata includes source digests and a page map. History and Open actions follow the selected output directory, and Process Again restores the workspace. The CLI's generic convert formats omit organize; the visual workspace is its supported entry point.
+
+Validation: 93 regression checks passed, covering the organizer, existing UI/storage/operations, migration, spread splitting and real OCR. A further 41 checks passed after final UI and History-search refinements. Tests include worker export to a chosen folder, source changes after queueing, cleanup without partial publication, persisted arrangements/retry, source preservation, mixed page sizes, form values and names, internal/external links, bookmarks, lazy thumbnail rendering, drag-drop row safety, and preserving edits on failed saves. Home and the populated merge/edit workspace were rendered and visually inspected. The packaged app has a dedicated organize smoke path that exercises merging, reordering, rotation, extraction, output folders and History.

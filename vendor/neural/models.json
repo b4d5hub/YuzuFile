@@ -1,0 +1,58 @@
+[
+  {
+    "path": "paddle/model.gguf",
+    "repository": "PaddlePaddle/PaddleOCR-VL-1.6-GGUF",
+    "revision": "511b09642bb324401f15f97cc23bc67e8f0a291d",
+    "file": "PaddleOCR-VL-1.6-GGUF.gguf",
+    "bytes": 935769056,
+    "sha256": "f3ae46ec885050acf4b3d31944431e1fd90d50664fb09126af4a3c050ba14ee8"
+  },
+  {
+    "path": "paddle/mmproj.gguf",
+    "repository": "PaddlePaddle/PaddleOCR-VL-1.6-GGUF",
+    "revision": "511b09642bb324401f15f97cc23bc67e8f0a291d",
+    "file": "PaddleOCR-VL-1.6-GGUF-mmproj.gguf",
+    "bytes": 881770560,
+    "sha256": "204d757d7610d9b3faab10d506d69e5b244e32bf765e2bab2d0167e65e0a058a"
+  },
+  {
+    "path": "lighton/model.gguf",
+    "repository": "staghado/LightOnOCR-3-0.8B-GGUF",
+    "revision": "fad751c3a09edf99d55931ed399c6ce7a90ea5fe",
+    "file": "model-Q4_K_M.gguf",
+    "bytes": 541903744,
+    "sha256": "bb57c9769af18d02f0bde4dd0840737cae170d7340cc0435eddcc36b443459df"
+  },
+  {
+    "path": "lighton/mmproj.gguf",
+    "repository": "staghado/LightOnOCR-3-0.8B-GGUF",
+    "revision": "fad751c3a09edf99d55931ed399c6ce7a90ea5fe",
+    "file": "mmproj-F16.gguf",
+    "bytes": 204986944,
+    "sha256": "101acc9466a587a615bbf7b29c0ecb6744e309363eba8b615fe3e09f5e1c5d5f"
+  },
+  {
+    "path": "rapid/PP-OCRv6_det_small.onnx",
+    "sha256": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f",
+    "bytes": 9929594,
+    "source": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.10.0/onnx/PP-OCRv6/det/PP-OCRv6_det_small.onnx"
+  },
+  {
+    "path": "rapid/PP-OCRv6_rec_medium.onnx",
+    "sha256": "eef444829dbbe18d7fea59a3f6eb75647518d2b3a9568d27c92e42940204894b",
+    "bytes": 76629984,
+    "source": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.10.0/onnx/PP-OCRv6/rec/PP-OCRv6_rec_medium.onnx"
+  },
+  {
+    "path": "rapid/arabic_PP-OCRv5_rec_mobile.onnx",
+    "sha256": "c1192e632d0baa9146ae5b756a0e635e3dc63c1733737ebfd1629e87144e9295",
+    "bytes": 8023828,
+    "source": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.10.0/onnx/PP-OCRv5/rec/arabic_PP-OCRv5_rec_mobile.onnx"
+  },
+  {
+    "path": "layout/pp_doc_layoutv3.onnx",
+    "sha256": "250dbad1dfb9e4983fab75e1bf5085cd56ec3f41d5c7d0f8623ec74856e7aa67",
+    "bytes": 130502330,
+    "source": "https://www.modelscope.cn/models/RapidAI/RapidLayout/resolve/v1.2.0/onnx/pp_doc_layout/pp_doc_layoutv3.onnx"
+  }
+]

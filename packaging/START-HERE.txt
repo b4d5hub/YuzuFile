@@ -1,0 +1,35 @@
+PDFai 0.27.0 for Windows
+======================
+
+Quit the old tray app first, then double-click PDFai.exe. Keep PDFai-worker.exe
+and _internal beside it. No Python, PowerShell or separate OCR installation is
+needed. PDFai appears beside the clock, possibly inside the ^ hidden-icons menu.
+
+Right-click the tray icon:
+  Process PDFs...          Choose PDFs and a tool.
+  Resume task             Continue an existing draft (shown when available).
+  Processing & results    Reopen this session's jobs and outputs.
+  Enable drag + Shift     Turn the desktop gesture on/off.
+  Quit PDFai              Exit, confirming if work is still running.
+
+Drag PDFs in Explorer, tap Shift while holding the mouse, and release over a
+tool on the temporary wheel. Escape dismisses the wheel. Ctrl+O adds files and
+Ctrl+Enter starts a ready batch. History and the Ctrl+H shortcut were removed.
+
+Hide keeps processing in the background. Done closes completed results. Reopen
+the current session through Processing & results. Results provide file/folder
+actions and retry; expand Show details to read warnings. Existing output files
+are preserved. Internal job records remain for processing and crash recovery.
+
+By default, results are saved beside each source, even with multiple folders.
+Merge/Arrange use the first source folder. Choose an output folder to override.
+Names use the original name plus _feature; collisions get numbered copies.
+
+Select English, French and/or Arabic as needed. The app runs locally on CPU,
+cleans existing text first and recognizes one page at a time. Word uses editable
+text/tables and replaceable figures. OCR can still misread names, vowel marks
+and letter variants: review important content against the source.
+
+For another Windows x64 PC, extract the complete portable ZIP before running.
+This is a personal-use build. Read PERSONAL-USE.txt and LICENSES for the bundled
+model and dependency terms. SOURCE contains the matching application source.
