@@ -70,22 +70,9 @@ YuzuFile lives in the system tray. Right-click to select PDFs, or drag files in 
 
 YuzuFile was designed to feel like an invisible part of Windows — **no heavy windows cluttering your taskbar**, and **zero cloud uploads**.
 
-```
-  [ Drag any PDF in Windows Explorer ]
-                   │
-                   ▼ (Tap SHIFT key)
-       ╭───────────────────────╮
-       │  🎡 Floating Wheel   │  ──> Drop onto any tool (OCR, Word, Split...)
-       ╰───────────────────────╯
-                   │
-                   ▼
-       ╭───────────────────────╮
-       │  ⚡ Local Processing   │  ──> High-speed on-device AI (No Internet)
-       ╰───────────────────────╯
-                   │
-                   ▼
-  [ Done! Saved right beside original file ]
-```
+<p align="center">
+  <img src="docs/screenshots/how-it-works.png" width="100%" alt="Drag a PDF in Windows Explorer, tap Shift, drop onto a tool, process locally, and find the output beside the original file." />
+</p>
 
 Screenshots below show the current **0.27.0 resident interface**: a temporary drop wheel, compact task windows, and visual page editors. Captures use a synthetic sample document; [capture details](docs/screenshots/current/README.md).
 
