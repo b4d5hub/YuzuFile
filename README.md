@@ -16,9 +16,9 @@ A local-first Windows desktop toolbox for PDF and document recognition, conversi
 YuzuFile lives in the system tray. Right-click to select PDFs, or drag files in Explorer and tap **Shift** to summon a floating tool wheel. Every operation runs locally on your machine — no cloud uploads, no API keys, no internet required after setup.
 
 <p align="center">
-  <img src="docs/screenshots/tool-wheel.png" width="220" alt="Tool Wheel" />
-  <img src="docs/screenshots/tray-menu.png" width="260" alt="Tray Menu" />
-  <img src="docs/screenshots/workspace.png" width="340" alt="Workspace Editor" />
+  <img src="docs/screenshots/current/tool-wheel.png" width="220" alt="Tool Wheel" />
+  <img src="docs/screenshots/current/tray-menu.png" width="260" alt="Tray Menu" />
+  <img src="docs/screenshots/current/workspace.png" width="340" alt="Current Arrange pages editor" />
 </p>
 
 > **Status:** Desktop beta `0.27.0`. Windows x64 is the supported target.
@@ -30,7 +30,7 @@ YuzuFile lives in the system tray. Right-click to select PDFs, or drag files in 
 ## Table of Contents
 
 - [Features](#features)
-- [How It Works](#how-it-works)
+- [How It Works](#how-it-works-for-everyday-users)
 - [Architecture](#architecture)
 - [Technology Stack](#technology-stack)
 - [Project Structure](#project-structure)
@@ -89,23 +89,25 @@ YuzuFile was designed to feel like an invisible part of Windows — **no heavy w
   [ Done! Saved right beside original file ]
 ```
 
+Screenshots below show the current **0.27.0 resident interface**: a temporary drop wheel, compact task windows, and visual page editors. Captures use a synthetic sample document; [capture details](docs/screenshots/current/README.md).
+
 ### The 3 Core Ways to Use YuzuFile:
 
 <table>
 <tr>
 <td width="33%" align="center">
 <h4>1. The Shift-Drag Wheel</h4>
-<img src="docs/screenshots/tool-wheel.png" width="220" alt="Shift Drag Wheel" />
+<img src="docs/screenshots/current/tool-wheel.png" width="220" alt="Shift Drag Wheel" />
 <p>Drag any PDF in Windows Explorer, tap the <b>Shift</b> key, and drop it directly onto the action you want.</p>
 </td>
 <td width="33%" align="center">
 <h4>2. The System Tray</h4>
-<img src="docs/screenshots/tray-menu.png" width="220" alt="Tray Menu" />
-<p>Right-click the Yuzu icon beside your Windows clock for quick access to batch tasks, history, and settings.</p>
+<img src="docs/screenshots/current/tray-menu.png" width="220" alt="Tray Menu" />
+<p>Right-click the Yuzu icon beside your Windows clock for quick access to processing tasks, current-session results, and the drag + Shift toggle.</p>
 </td>
 <td width="33%" align="center">
 <h4>3. Visual Page Editors</h4>
-<img src="docs/screenshots/workspace.png" width="260" alt="Visual Workspace" />
+<img src="docs/screenshots/current/workspace.png" width="260" alt="Current Arrange pages editor" />
 <p>Rearrange, delete, rotate, or split pages with an interactive live visual grid before saving.</p>
 </td>
 </tr>
@@ -118,25 +120,25 @@ YuzuFile was designed to feel like an invisible part of Windows — **no heavy w
 ### 📄 1. Smart OCR & Editable Word Export (.docx)
 Turn scanned documents, photos, or old papers into **fully selectable PDFs** or **editable Word files with intact tables and right-to-left (Arabic) support**.
 <p align="center">
-  <img src="docs/screenshots/word-export.png" width="540" alt="Word Export Settings" />
+  <img src="docs/screenshots/current/word-export.png" width="540" alt="Word Export Settings" />
 </p>
 
 ### ✂️ 2. Split Book Spreads & Scans
 Divide dual-page book scans into individual, readable pages in seconds. Choose between Left-to-Right, Right-to-Left, or vertical splits.
 <p align="center">
-  <img src="docs/screenshots/split-editor.png" width="600" alt="Split Book Spreads" />
+  <img src="docs/screenshots/current/split-editor.png" width="600" alt="Split Book Spreads" />
 </p>
 
 ### 🧹 3. Page Cleanup & Straightening
 Crop irregular borders, clean margins, and automatically deskew tilted scans visually.
 <p align="center">
-  <img src="docs/screenshots/cleanup-editor.png" width="600" alt="Cleanup and Crop" />
+  <img src="docs/screenshots/current/cleanup-editor.png" width="600" alt="Cleanup and Crop" />
 </p>
 
 ### 🗜️ 4. Multi-Tier File Compression
 Shrink massive PDFs for email attachment without losing clarity. Choose **Lossless**, **Balanced**, or **Maximum**.
 <p align="center">
-  <img src="docs/screenshots/compress-options.png" width="500" alt="Compression Options" />
+  <img src="docs/screenshots/current/compress-options.png" width="500" alt="Compression Options" />
 </p>
 
 ---

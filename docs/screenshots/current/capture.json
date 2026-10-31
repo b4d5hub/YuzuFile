@@ -1,0 +1,44 @@
+{
+  "version": "0.27.0",
+  "capture": "Qt widget grabs from current resident surfaces; synthetic sample; no UI retouching",
+  "source_sha256": {
+    "ui": "9fb04e539a7aec4ba5a384982d5d4defa1b75f33b12bb0b02dd7a8bcf52adb11",
+    "shaped_shell": "0c13f1088994385430e3c266356660b5a65971b67c77b8befbf04984852b39e9",
+    "desktop_drag": "1aaaf847ac964bf468711ff610392c1ed1834d7ad6afa457ab264ff59a8d9b46",
+    "system_tray": "9af67c186c6ddccbadca0dcd98825c608a837a479c0e45e7114a3b298a1c51bd",
+    "organize_ui": "84c5c5634805a45112b8d75250249e4c42633903bff3bfea0ddde9f928cb6197",
+    "spread_preview": "6e1ca738ffe81857b8b674cd5ed1829a898011e7641af16767f660488b514c91",
+    "cleanup_preview": "e8f6be119835b365550db37aad8480a7fd629ce8b51779f530cf4048a2f386c3",
+    "ui_style": "7b353609c968fe332a2f3c09eb6f9ff516881279aa77dba05b9f05bbfeb86d3f"
+  },
+  "screenshots": {
+    "tray-menu": {
+      "widget": "QMenu",
+      "sha256": "a1c0ec0d398f90e38235d8fb9badd606e559112edb8e2b7eb77fce8693212738"
+    },
+    "tool-wheel": {
+      "widget": "DesktopDropWheel",
+      "sha256": "430339d1d20f133971c70c7b22d82f903e6675e95ae42d5e7c5a8ca12c5d5604"
+    },
+    "word-export": {
+      "widget": "FloatingShell",
+      "sha256": "5cb7cc37466b9a14400ddd98d8bdbb7a18ac22373f524ee66609db64c9cf8d47"
+    },
+    "compress-options": {
+      "widget": "FloatingShell",
+      "sha256": "5712a2a2f1ab299ac2a3a4026ff5c2d99454a4f38a036ba73d188a799d7f996b"
+    },
+    "workspace": {
+      "widget": "OrganizeDialog",
+      "sha256": "d7ede26bfa4229cd22295839de243f8c95af921fc8663887a0348ba1ebcfba3a"
+    },
+    "split-editor": {
+      "widget": "SpreadPreview",
+      "sha256": "193f1c69ad1de4708787e6ad02d3dd4b7896675a361e30ac3a07db3fa9775a6f"
+    },
+    "cleanup-editor": {
+      "widget": "CleanupPreview",
+      "sha256": "02289d00cc896c6b0397997cdedbde78ece995eafe070e196f85cb32fb450e22"
+    }
+  }
+}
