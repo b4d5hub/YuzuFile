@@ -117,29 +117,34 @@ Screenshots below show the current **0.27.0 resident interface**: a temporary dr
 
 ## Visual Feature Walkthrough
 
-### 📄 1. Smart OCR & Editable Word Export (.docx)
-Turn scanned documents, photos, or old papers into **fully selectable PDFs** or **editable Word files with intact tables and right-to-left (Arabic) support**.
-<p align="center">
-  <img src="docs/screenshots/current/word-export.png" width="540" alt="Word Export Settings" />
-</p>
-
-### ✂️ 2. Split Book Spreads & Scans
-Divide dual-page book scans into individual, readable pages in seconds. Choose between Left-to-Right, Right-to-Left, or vertical splits.
-<p align="center">
-  <img src="docs/screenshots/current/split-editor.png" width="600" alt="Split Book Spreads" />
-</p>
-
-### 🧹 3. Page Cleanup & Straightening
-Crop irregular borders, clean margins, and automatically deskew tilted scans visually.
-<p align="center">
-  <img src="docs/screenshots/current/cleanup-editor.png" width="600" alt="Cleanup and Crop" />
-</p>
-
-### 🗜️ 4. Multi-Tier File Compression
-Shrink massive PDFs for email attachment without losing clarity. Choose **Lossless**, **Balanced**, or **Maximum**.
-<p align="center">
-  <img src="docs/screenshots/current/compress-options.png" width="500" alt="Compression Options" />
-</p>
+<table>
+<tr>
+<td width="33%" align="center" valign="top">
+<h4>📄 Smart OCR &amp; Word Export</h4>
+<a href="docs/screenshots/current/word-export.png"><img src="docs/screenshots/current/word-export.png" width="260" alt="Word Export Settings" /></a>
+<p>Turn scanned PDFs into searchable PDFs or editable Word files, with table reconstruction and right-to-left Arabic support.</p>
+</td>
+<td width="33%" align="center" valign="top">
+<h4>✂️ Split Book Spreads &amp; Scans</h4>
+<a href="docs/screenshots/current/split-editor.png"><img src="docs/screenshots/current/split-editor.png" width="260" alt="Split Book Spreads" /></a>
+<p>Divide scanned spreads into individual pages. Choose left-to-right, right-to-left, or vertical splits.</p>
+</td>
+<td width="33%" align="center" valign="top">
+<h4>🧹 Page Cleanup &amp; Straightening</h4>
+<a href="docs/screenshots/current/cleanup-editor.png"><img src="docs/screenshots/current/cleanup-editor.png" width="260" alt="Cleanup and Crop" /></a>
+<p>Crop irregular borders, adjust margins, and straighten tilted scans visually.</p>
+</td>
+</tr>
+<tr>
+<td width="33%" align="center" valign="top">
+<h4>🗜️ PDF Compression</h4>
+<a href="docs/screenshots/current/compress-options.png"><img src="docs/screenshots/current/compress-options.png" width="260" alt="Compression Options" /></a>
+<p>Choose Lossless, Balanced, or Maximum compression. Lossy levels trade image detail for smaller files.</p>
+</td>
+<td width="33%"></td>
+<td width="33%"></td>
+</tr>
+</table>
 
 ---
 
