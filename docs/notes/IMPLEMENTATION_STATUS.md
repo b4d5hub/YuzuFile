@@ -18,7 +18,7 @@
 - Atomic output-directory publication, interrupted-job recovery, temporary snapshot cleanup, and a per-library instance lock.
 - Windows Job Objects to stop the entire worker process tree on cancellation or app death; bounded job time and memory.
 - CLI, dependency diagnostics, project environment, setup and launch scripts.
-- Portable `PDFai.exe` and hidden `PDFai-worker.exe` sharing a bundled Python/Qt runtime, Tesseract, and English recognition data. Normal users double-click the main executable; no Python/PowerShell or separate OCR installation is needed.
+- Portable `YuzuFile.exe` and hidden `YuzuFile-worker.exe` sharing a bundled Python/Qt runtime, Tesseract, and English recognition data. Normal users double-click the main executable; no Python/PowerShell or separate OCR installation is needed.
 - Reproducible PyInstaller spec, developer build script, portable ZIP, included source snapshot/component notices, and packaged smoke checks with developer tools removed from PATH.
 
 ## Engine decisions for the prototype

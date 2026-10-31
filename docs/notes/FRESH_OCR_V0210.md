@@ -16,7 +16,7 @@ Standalone output is `document.no-ocr.pdf`; with compression the single output
 is `document.compressed.pdf`, which remains image-only.
 
 All recognition now ignores the PDF's old text layer, including PDFs with native
-digital text or a PDFai OCR marker. It needs selected OCR languages. Each source
+digital text or a YuzuFile OCR marker. It needs selected OCR languages. Each source
 page is rasterized into a fresh page, recognized by the local OCR engines, and
 marked with fresh provenance. No old text is retained as a fallback. Unsupported
 or failed recognition fails clearly or reports an empty recognized page instead

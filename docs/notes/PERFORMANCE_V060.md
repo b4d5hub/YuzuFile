@@ -1,4 +1,4 @@
-# Performance controls — PDFai 0.6.0
+# Performance controls — YuzuFile 0.6.0
 
 The Home form now has one Performance dropdown above Process PDFs. No settings page is added. Balanced is the initial choice; a submitted batch captures the selection, then the form resets to Balanced. History details show the selection, and Process Again recalls that job's level.
 
@@ -24,4 +24,4 @@ Verification covers real OCR and Markdown on three-page scans in every profile, 
 
 Source validation: **69 tests passed in 45.56 seconds** on this Windows/Python environment. The updated Home form was also rendered and visually checked at the existing desktop size.
 
-Packaged validation passed for bundled English/French/Arabic discovery, digital Markdown, scanned OCR/Markdown, existing OCR text with graphics, all three compression levels, and an actual frozen GUI conversion using Low usage. The portable executable and ZIP are under `dist/PDFai-0.6.0` and `dist/PDFai-Windows-0.6.0.zip`.
+Packaged validation passed for bundled English/French/Arabic discovery, digital Markdown, scanned OCR/Markdown, existing OCR text with graphics, all three compression levels, and an actual frozen GUI conversion using Low usage. The portable executable and ZIP are under `dist/YuzuFile-0.6.0` and `dist/YuzuFile-Windows-0.6.0.zip`.

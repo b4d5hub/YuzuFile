@@ -1,4 +1,4 @@
-# PDFai 0.12.0 — multiple sections per page
+# YuzuFile 0.12.0 — multiple sections per page
 
 Split spreads now includes a **Parts per page** count from 2 to 12. A count of
 3 creates two cut lines and three output pages for every selected input page;

@@ -1,6 +1,6 @@
 # Security and privacy
 
-PDFai processes documents locally using installed models and native libraries.
+YuzuFile processes documents locally using installed models and native libraries.
 Preparation scripts download resources. Local inference does not mean local data
 is encrypted or automatically deleted: job metadata, staging/results, and published
 files can contain document content and identifying paths.

@@ -5,7 +5,7 @@ Ctrl+H shortcut, tray action, CLI command, and Remove from History result action
 The application no longer builds or refreshes an invisible history list.
 
 The tray menu is now Process PDFs, optional Resume task, Processing & results,
-Enable drag + Shift, and Quit PDFai. Duplicate latest-file and latest-folder
+Enable drag + Shift, and Quit YuzuFile. Duplicate latest-file and latest-folder
 shortcuts were removed; file actions remain on current-session results. Icons
 use the existing Lucide set. The literal ampersand is escaped for Qt menus.
 

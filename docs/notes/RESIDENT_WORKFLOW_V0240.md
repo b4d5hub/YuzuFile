@@ -1,12 +1,12 @@
 # Tray-first workflow — 0.24.0
 
-Normal Windows use has no persistent wheel or Home window. PDFai remains in the
+Normal Windows use has no persistent wheel or Home window. YuzuFile remains in the
 notification area. A real external PDF drag followed by Shift reveals the
 temporary wheel near the cursor. Drop on a tool to open that focused task.
 The wheel closes with the drag; it has no movable handle.
 
 Tray clicks open a compact menu: Process PDFs, Processing & results, History,
-Open latest result, Open result folder, Enable drag + Shift, Quit PDFai.
+Open latest result, Open result folder, Enable drag + Shift, Quit YuzuFile.
 Resume task appears when a draft is available, so hiding an unfinished task does
 not make it inaccessible. It switches back from History to that task directly.
 Process PDFs offers a native picker and a compact tool menu as an accessible

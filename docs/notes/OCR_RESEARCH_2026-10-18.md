@@ -1,10 +1,10 @@
-# OCR and PDF-to-Markdown research for PDFai
+# OCR and PDF-to-Markdown research for YuzuFile
 
 Research date: **18 October 2026**. Scope: local Windows desktop software, English/French/Arabic, mixed-language PDFs, searchable PDF output, and faithful Markdown with tables and diagrams.
 
 ## Recommendation
 
-**Use PaddleOCR-VL-1.6's complete document parsing pipeline as the first quality-focused prototype, and benchmark LightOnOCR-3-0.8B as its strongest recent challenger. Use RapidOCR 3.10 with PP-OCRv6 as the first lightweight OCR prototype.** These are recommendations for evaluation, not measured winners on PDFai's documents.
+**Use PaddleOCR-VL-1.6's complete document parsing pipeline as the first quality-focused prototype, and benchmark LightOnOCR-3-0.8B as its strongest recent challenger. Use RapidOCR 3.10 with PP-OCRv6 as the first lightweight OCR prototype.** These are recommendations for evaluation, not measured winners on YuzuFile's documents.
 
 For a CPU-oriented Markdown pipeline, evaluate **Docling 2.140 with RapidOCR**, including explicit handling of mixed scripts. Do not combine every framework into the shipped application. Compare these alternatives, then ship the smallest pipeline that meets the quality requirements.
 
@@ -31,7 +31,7 @@ Verified against the local source and dependency declarations:
 - **PyMuPDF4LLM 1.28.2** produces Markdown. The current implementation explicitly disables its model-based layout mode with `use_layout(False)`.
 - Existing GlyphlessFont OCR text is reused. Presence of an OCR layer currently causes recognition to be skipped, even when that layer contains errors.
 
-Sources: local `pyproject.toml`, `src/pdfai/engines.py` and `src/pdfai/languages.py`.
+Sources: local `pyproject.toml`, `src/yuzufile/engines.py` and `src/yuzufile/languages.py`.
 
 This means the current conversion can preserve an inaccurate OCR transcript. Improving Markdown formatting cannot recover words that were already missed in that transcript. The current configuration is also distinct from the full capabilities of the PyMuPDF4LLM library.
 
@@ -59,7 +59,7 @@ Distinguish three products:
 
 The VL series documents 109-language coverage; its published language table includes Arabic and French. The full pipeline locates elements, recognizes crops and assembles them in reading order. Running only the VLM is explicitly not equivalent. Official documentation supports CPU paths and a llama.cpp service, while noting that vLLM, SGLang and FastDeploy do not run natively on Windows. [Pipeline and deployment guide](https://www.paddleocr.ai/latest/en/version3.x/pipeline_usage/PaddleOCR-VL.html), [published language list](https://ernie.baidu.com/blog/publication/PaddleOCR-VL_Technical_Report.pdf).
 
-**Assessment:** first quality prototype for the complete multilingual requirement. Test the Windows-compatible runtime and complete pipeline, rather than expecting the raw model to reproduce published results. Treat published OmniDocBench scores as evidence to investigate, not PDFai's accuracy guarantee.
+**Assessment:** first quality prototype for the complete multilingual requirement. Test the Windows-compatible runtime and complete pipeline, rather than expecting the raw model to reproduce published results. Treat published OmniDocBench scores as evidence to investigate, not YuzuFile's accuracy guarantee.
 
 ### 2. RapidOCR: best lightweight OCR candidate to test first
 
@@ -67,7 +67,7 @@ The VL series documents 109-language coverage; its published language table incl
 
 It makes Paddle OCR models usable through runtimes including ONNX Runtime. Arabic handling requires the RTL extra, which installs `python-bidi`; the documented model registry contains separate script-specific recognizers. It does not itself solve document headings, reading order or diagram preservation. [Installation guide](https://rapidai.github.io/RapidOCRDocs/main/en/install_usage/rapidocr/install/), [model registry](https://github.com/RapidAI/RapidOCR/blob/main/python/rapidocr/default_models.yaml).
 
-**Assessment:** strongest first candidate for a small CPU OCR worker. Benchmark PP-OCRv6 small and medium for English/French and the available Arabic-specific model separately. A shared detector plus recognizer routing/merging is a proposed PDFai design, not a documented automatic solution for every three-language page.
+**Assessment:** strongest first candidate for a small CPU OCR worker. Benchmark PP-OCRv6 small and medium for English/French and the available Arabic-specific model separately. A shared detector plus recognizer routing/merging is a proposed YuzuFile design, not a documented automatic solution for every three-language page.
 
 ### 3. Docling: strongest framework candidate for structured CPU output
 

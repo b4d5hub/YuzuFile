@@ -1,4 +1,4 @@
-# PDFai desktop experience — v0.10.0
+# YuzuFile desktop experience — v0.10.0
 
 The redesign organizes the interface around documents, tools and a clear next action. Home and History remain the only main pages. No sidebar, dashboard, gradients, decorative imagery or additional settings page is introduced.
 
@@ -22,4 +22,4 @@ History expands search, uses quiet operation icons, clear status badges and comp
 
 ## Verification
 
-95 UI, organization, storage, operation, spread and migration checks passed. This includes whole-card click/keyboard semantics, fixed action geometry across scroll positions at compact sizes, contextual actions, progressive settings, readable popup colors, original-file preservation, page-plan retry and real OCR. Empty/loaded/compact workspace, populated History and the page editor were rendered and visually inspected. New Lucide assets are recorded in src/pdfai/icon_assets.py; shared visual controls are in src/pdfai/ui_components.py. Back-end engines and output formats are unchanged.
+95 UI, organization, storage, operation, spread and migration checks passed. This includes whole-card click/keyboard semantics, fixed action geometry across scroll positions at compact sizes, contextual actions, progressive settings, readable popup colors, original-file preservation, page-plan retry and real OCR. Empty/loaded/compact workspace, populated History and the page editor were rendered and visually inspected. New Lucide assets are recorded in src/yuzufile/icon_assets.py; shared visual controls are in src/yuzufile/ui_components.py. Back-end engines and output formats are unchanged.

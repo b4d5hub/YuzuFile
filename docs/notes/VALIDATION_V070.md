@@ -1,4 +1,4 @@
-# PDFai 0.7.0 validation — 2026-10-20
+# YuzuFile 0.7.0 validation — 2026-10-20
 
 The researched engines are integrated and included in the Windows package, not merely installed in the developer environment.
 
@@ -20,4 +20,4 @@ RapidOCR 3.10.0 uses PP-OCRv6 small detection, medium Latin recognition, and Ara
 
 Exact model revisions, sizes and SHA-256 hashes are in `_internal/neural/models.json` in the portable package. Upstream licenses and complete app source are included. No user PDFs were sent to a hosted OCR or AI service. User chapter test data is kept outside the distributed source snapshot.
 
-The package is a portable folder. Extract the entire ZIP and double-click PDFai.exe; keep PDFai-worker.exe and _internal beside it. No Python or command line is required for normal use. Clean-VM testing and a broad multilingual corpus remain future validation work.
+The package is a portable folder. Extract the entire ZIP and double-click YuzuFile.exe; keep YuzuFile-worker.exe and _internal beside it. No Python or command line is required for normal use. Clean-VM testing and a broad multilingual corpus remain future validation work.

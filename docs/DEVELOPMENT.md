@@ -31,7 +31,7 @@ machines. Record dependency changes and rerun affected packaged checks.
 Install a Windows Tesseract distribution including its executable, DLLs, English
 language data, and license documentation. Development discovers Tesseract on PATH
 or standard Windows installation paths. The packager can also use
-`PDFAI_TESSERACT` pointing to `tesseract.exe`; that override is build-specific.
+`YUZUFILE_TESSERACT` pointing to `tesseract.exe`; that override is build-specific.
 The package spec expects a `tessdata` and `doc` directory beside the executable.
 
 Model acquisition is explicit and requires network access. Read the license files
@@ -66,12 +66,12 @@ away from personal app data. CLI conversion is also available:
 ```
 
 Use a real local sample in place of `sample.pdf`. CLI operations are defined in
-`src/pdfai/operations.py`; the current CLI has no History command.
+`src/yuzufile/operations.py`; the current CLI has no History command.
 
 ## Repository map
 
 ```text
-src/pdfai/                  Application, engines, editors, persistence
+src/yuzufile/                  Application, engines, editors, persistence
 tests/                      Regression tests and generated fixtures
 scripts/                    Setup, model preparation, verification, builds
 packaging/                  PyInstaller spec, entry point, end-user instructions
@@ -136,10 +136,10 @@ checks guarded modules against source, copies source/notices, creates a ZIP, and
 updates the local workspace shortcut. Outputs follow:
 
 ```text
-dist/PDFai-<version>/PDFai.exe
-dist/PDFai-<version>/PDFai-worker.exe
-dist/PDFai-<version>/_internal/
-dist/PDFai-Windows-<version>.zip
+dist/YuzuFile-<version>/YuzuFile.exe
+dist/YuzuFile-<version>/YuzuFile-worker.exe
+dist/YuzuFile-<version>/_internal/
+dist/YuzuFile-Windows-<version>.zip
 ```
 
 This is a portable bundle, not a signed installer. `--package-only` refreshes
@@ -150,7 +150,7 @@ runtime dependency or model behavior.
 Before release, run the packaged app without a developer PATH and with an isolated
 library. Verify a real conversion, cancellation, output placement, multilingual
 content, tray lifecycle, and visual editors. `scripts/smoke_windows.py` and
-`src/pdfai/packaging_smoke.py` contain existing smoke tooling; inspect their options
+`src/yuzufile/packaging_smoke.py` contain existing smoke tooling; inspect their options
 before use. No CI workflow or universal clean-machine certification is claimed.
 
 ## Troubleshooting

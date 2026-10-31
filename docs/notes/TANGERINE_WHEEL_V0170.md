@@ -1,4 +1,4 @@
-# PDFai 0.17.0 sculpted tool workspace
+# YuzuFile 0.17.0 sculpted tool workspace
 
 This revision replaces the rectangular tool grid with a file-centred radial
 menu, following the sculpted wheel and compact gray tool-window examples at

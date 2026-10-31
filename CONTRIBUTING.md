@@ -1,4 +1,4 @@
-# Contributing to PDFai
+# Contributing to YuzuFile
 
 Public contribution infrastructure is being prepared. Start with the
 [README](README.md), [architecture](docs/ARCHITECTURE.md), and

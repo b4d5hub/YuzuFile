@@ -97,6 +97,13 @@ flowchart LR
 
 ## Architecture
 
+YuzuFile uses a two-process desktop architecture: the Qt desktop process owns user interactions and SQLite state, while an isolated worker process executes transforms and neural inference within a constrained Windows Job Object.
+
+For full technical specifications, see **[Architecture & UML Guide](docs/ARCHITECTURE.md)**.
+
+<details>
+<summary><strong>View Subsystem & Architecture Diagrams</strong> (Class, Sequence, Lifecycle, ER, Dependencies)</summary>
+
 ### Class Relationships
 
 ```mermaid
@@ -141,7 +148,7 @@ classDiagram
     Supervisor ..> Performance : resolves budget
 ```
 
-### Conversion Pipeline — Sequence Diagram
+### Conversion Pipeline (Sequence Diagram)
 
 ```mermaid
 sequenceDiagram
@@ -182,7 +189,7 @@ sequenceDiagram
     UI-->>User: output actions + warnings
 ```
 
-### Job Lifecycle — State Machine
+### Job Lifecycle (State Machine)
 
 ```mermaid
 stateDiagram-v2
@@ -203,7 +210,7 @@ stateDiagram-v2
     interrupted --> [*]
 ```
 
-### Data Model — Entity Relationship
+### Data Model (ER Diagram)
 
 ```mermaid
 erDiagram
@@ -266,6 +273,8 @@ flowchart TD
     Engines --> Transforms
     Recognition --> Resources
 ```
+
+</details>
 
 ### Resource Budget Policy
 
@@ -476,7 +485,7 @@ The desktop and worker are separate executables by design — the supervisor spa
 - **Resource usage** — model bundles require substantial disk space; CPU processing takes time and memory
 - **Platform** — Windows x64 only; macOS, Linux, cloud sync, and public API are not established
 
-See the [Arabic OCR validation note](docs/ARABIC_OCR_V0260.md) for language-specific accuracy observations.
+See the [Arabic OCR validation note](docs/notes/ARABIC_OCR_V0260.md) for language-specific accuracy observations.
 
 ---
 
@@ -494,7 +503,7 @@ See the [Arabic OCR validation note](docs/ARABIC_OCR_V0260.md) for language-spec
 <details>
 <summary><strong>Historical implementation notes</strong> (versioned docs)</summary>
 
-Version-labelled files under `docs/` are historical implementation notes tracking
+Version-labelled files under `docs/notes/\` are historical implementation notes tracking
 the evolution of specific subsystems. They may describe superseded behavior.
 This README and the architecture guide describe the current version.
 

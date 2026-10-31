@@ -1,4 +1,4 @@
-# Library resource controls — PDFai 0.6.1
+# Library resource controls — YuzuFile 0.6.1
 
 The existing Low usage / Balanced / High performance selector now governs the native-library lifecycle throughout a conversion. No additional controls or pages are introduced.
 

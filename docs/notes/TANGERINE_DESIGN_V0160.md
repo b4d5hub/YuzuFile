@@ -1,12 +1,12 @@
-# PDFai design system 0.16.0
+# YuzuFile design system 0.16.0
 
 Reference: https://tangerineformac.com/ (reviewed 27 October 2026).
 
 The desktop interface takes inspiration from Tangerine's pale neutral canvas,
 white rounded surfaces, charcoal type, orange accents and softly raised controls.
-PDFai keeps its own document icon, Windows typography and batch-processing flow.
+YuzuFile keeps its own document icon, Windows typography and batch-processing flow.
 
-Shared colors live in `src/pdfai/ui_style.py`. The canvas is warm gray `#f5f4f2`,
+Shared colors live in `src/yuzufile/ui_style.py`. The canvas is warm gray `#f5f4f2`,
 surfaces are white, text is charcoal `#292724`, and the brand mark is bright
 orange `#ff6b35`. Interactive orange `#b94418` is darker for legible links and
 white check marks. Primary actions use charcoal with white text. Text contrasts

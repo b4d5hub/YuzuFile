@@ -1,4 +1,4 @@
-# PDFai engineering plan
+# YuzuFile engineering plan
 
 Date: 2026-10-17. Status: proposed; engine selection requires a working prototype.
 
@@ -71,7 +71,7 @@ No HTTP server is needed. Use a small versioned JSON message protocol over proce
 Suggested source layout:
 
 ```text
-src/pdfai/
+src/yuzufile/
   ui/                 # windows, widgets, view models
   application/        # use cases and job supervisor
   domain/             # job states, settings, errors

@@ -1,12 +1,12 @@
 # Notification area and desktop PDF drag — 0.23.0
 
-Start PDFai normally by double-clicking the EXE or project shortcut. It registers
+Start YuzuFile normally by double-clicking the EXE or project shortcut. It registers
 its icon in the Windows notification area and remains available without an open
 window. Windows can place this icon inside its **^** overflow menu. There is no
 Windows-login autorun registration.
 
 Click the icon to restore the current task, results, History or modal editor.
-Right-click for Show PDFai, Add PDFs, History, Enable drag + Shift and Quit PDFai.
+Right-click for Show YuzuFile, Add PDFs, History, Enable drag + Shift and Quit YuzuFile.
 Closing/minimizing the floating window hides it; the conversion supervisor keeps
 running. Explicit Quit asks before cancelling unfinished work. Without a system
 tray, normal visible-window startup and close behavior are retained.
@@ -45,7 +45,7 @@ An open modal editor/menu retains interaction until it is closed.
   the native Drop callback returns. Qt-context timers and generation counters
   handle cancellation, shutdown and release/drop ordering.
 - Qt logical coordinates and the pointer's monitor work area place the wheel.
-  Existing PDFai modal/menu/internal-drag interactions suppress activation.
+  Existing YuzuFile modal/menu/internal-drag interactions suppress activation.
 - `desktop_instance.py` provides a bounded, user-local QLocalServer activation
   channel keyed by the resolved library path. A second GUI launch asks the owner
   to restore itself before opening Store. A short startup retry covers the gap

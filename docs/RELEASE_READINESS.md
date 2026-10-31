@@ -1,6 +1,6 @@
 # Public release readiness
 
-This is a preparation checklist, not a claim that PDFai is cleared for public
+This is a preparation checklist, not a claim that YuzuFile is cleared for public
 distribution. The current build targets personal use. No GitHub publication is
 performed by preparing these documents.
 

@@ -1,6 +1,6 @@
-# A shaped PDFai desktop shell — 0.20.0
+# A shaped YuzuFile desktop shell — 0.20.0
 
-PDFai now starts as a real floating tool wheel. Its top-level window is frameless,
+YuzuFile now starts as a real floating tool wheel. Its top-level window is frameless,
 has a transparent background and uses a native input mask: the empty corners do
 not cover the desktop. The existing conversion controller and engines are reused.
 
@@ -8,7 +8,7 @@ The wheel keeps its real tool buttons and central PDF drop/browse target. Select
 one operation or combine several. The attached grip provides a visible drag handle,
 context access, History, Minimize and Close. The context button opens added files
 and options when idle, or returns to processing/results when jobs exist. Tool labels and keyboard
-focus remain available; icons have accessible names. Minimized PDFai remains in
+focus remain available; icons have accessible names. Minimized YuzuFile remains in
 the normal Windows taskbar.
 
 Choosing a tool opens an attached silver tray containing the actual file list,
@@ -24,7 +24,7 @@ filename, stage, segmented progress and cancellation. Completed outputs provide
 file/folder actions; failed and cancelled work can be retried. Mixed batches keep
 their attention count visible. Compression savings are retained. History opens in
 a separate large window using the existing history search, filtering and actions.
-Closing History leaves PDFai and its library running; retry returns to the tray.
+Closing History leaves YuzuFile and its library running; retry returns to the tray.
 
 Visual page editors remain large, resizable/maximizable workspaces. Their dialog
 owner is the visible shell, so editing does not depend on a hidden legacy window.

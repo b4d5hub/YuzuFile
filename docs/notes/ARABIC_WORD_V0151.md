@@ -36,7 +36,7 @@ Tests cover glyph order, marks, mixed-script runs, Arabic formatting, table
 merges/widths, native bilingual PDFs, selective mapping repair, numeric fallback
 and avoiding unnecessary model loads. `scripts/verify_arabic_word.py` generates
 native/scanned Arabic and mixed-language fixtures. Development QA renders the
-DOCX files through the document renderer; LibreOffice is not required by PDFai.
+DOCX files through the document renderer; LibreOffice is not required by YuzuFile.
 
 OOXML references: [RTL run formatting](https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.wordprocessing.righttolefttext)
 and [RTL table presentation](https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.wordprocessing.bidivisual).

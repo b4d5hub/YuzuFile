@@ -29,6 +29,6 @@ resolution limit. Zoom changes are debounced. Thumbnail generation remains
 restricted to visible cards and has a bounded cache. Previews do not alter the
 PDF or save screenshots into exported documents.
 
-Launch the updated version using the workspace PDFai shortcut or
-`dist/PDFai-0.19.0/PDFai.exe`. Close an older app normally after finishing any open
+Launch the updated version using the workspace YuzuFile shortcut or
+`dist/YuzuFile-0.19.0/YuzuFile.exe`. Close an older app normally after finishing any open
 editing session, then reopen using the updated shortcut.

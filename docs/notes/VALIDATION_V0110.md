@@ -1,4 +1,4 @@
-# PDFai 0.11.0 validation — 2026-10-23
+# YuzuFile 0.11.0 validation — 2026-10-23
 
 This is a personal-use build, as explicitly requested by the user. It bundles
 Indra Python 1.1.2 and pinned official 1.1.0 weights. No model weights were

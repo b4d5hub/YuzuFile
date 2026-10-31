@@ -5,11 +5,11 @@ show important relationships rather than every method.
 
 ## Component map
 
-PDFai is a desktop application. Qt owns interaction, session-visible results,
+YuzuFile is a desktop application. Qt owns interaction, session-visible results,
 SQLite, and the queue. One worker process handles one conversion attempt; native
 inference can use additional helper processes managed within the worker tree.
 
-All modules below are under `src/pdfai/`.
+All modules below are under `src/yuzufile/`.
 
 | Responsibility | Modules |
 | --- | --- |
@@ -180,7 +180,7 @@ erDiagram
 ```
 
 The default store contains `history.sqlite3`, `instance.lock`, and
-`library/<job-id>/` under `%LOCALAPPDATA%\PDFai`. Explicit destinations can hold
+`library/<job-id>/` under `%LOCALAPPDATA%\YuzuFile`. Explicit destinations can hold
 job folders outside this library. SQLite uses WAL and foreign keys. The database
 name is historical; there is no History UI.
 

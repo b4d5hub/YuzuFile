@@ -1,4 +1,4 @@
-# PDFai 0.11.0 — personal-use Indra integration
+# YuzuFile 0.11.0 — personal-use Indra integration
 
 Indra OCR Python package 1.1.2 uses the official v1.1.0 model set, pinned at
 `bd02167fdf2005a19962cc15188f8496a2c87d3b`. Model sizes and SHA-256 hashes

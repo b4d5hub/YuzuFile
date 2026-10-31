@@ -1,4 +1,4 @@
-# Tangerine reference study and PDFai 0.22.0
+# Tangerine reference study and YuzuFile 0.22.0
 
 ## Sources inspected
 
@@ -33,7 +33,7 @@ the card, with an order badge and rotation control on the image. Compress shows
 file context and original size before its preset controls. Crop places its
 adjustment handles directly on a large content preview.
 
-## Applied to PDFai's existing features
+## Applied to YuzuFile's existing features
 
 | Feature | Resulting interaction |
 | --- | --- |
@@ -49,10 +49,10 @@ adjustment handles directly on a large content preview.
 | Processing/results | Movable compact status window with persistent Back to tools. A file selector exposes every result in a batch. Details stay folded by default. |
 | History | The same tool-window chrome, with search, status filters and existing file actions. Closing History restores the launcher. |
 
-PDFai keeps Windows shortcuts and its current backend capabilities. Tangerine's
+YuzuFile keeps Windows shortcuts and its current backend capabilities. Tangerine's
 target-size compression, media resizing and unrelated file tools are not added.
 
-## PDFai visual implementation
+## YuzuFile visual implementation
 
 - Segoe UI: 13 px body text and a 16 px semibold centered tool title.
 - Tool header: 48 px; body spacing: 8–12 px; body inset: 16–18 px.
@@ -77,7 +77,7 @@ pixel limits, all split directions, crop scopes, page rotation, drag feedback,
 extraction and unchanged sources. New interaction checks cover single-tool
 launching, explicit combinations, modal return to the launcher, batch result
 selection, merge order and merge output naming. A separate real Qt event-loop
-check confirms that closing a focused tool does not quit PDFai.
+check confirms that closing a focused tool does not quit YuzuFile.
 
 Visual QA includes large and small editor windows, Straighten and Pages states,
 and the current launcher, conversion, compression, merge and arrange windows.
