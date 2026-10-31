@@ -119,30 +119,28 @@ Screenshots below show the current **0.27.0 resident interface**: a temporary dr
 
 <table>
 <tr>
-<td width="33%" align="center" valign="top">
+<td width="50%" align="center" valign="top">
 <h4>📄 Smart OCR &amp; Word Export</h4>
-<a href="docs/screenshots/current/word-export.png"><img src="docs/screenshots/current/word-export.png" width="260" alt="Word Export Settings" /></a>
+<a href="docs/screenshots/current/word-export.png"><img src="docs/screenshots/current/word-export.png" width="380" alt="Word Export Settings" /></a>
 <p>Turn scanned PDFs into searchable PDFs or editable Word files, with table reconstruction and right-to-left Arabic support.</p>
 </td>
-<td width="33%" align="center" valign="top">
+<td width="50%" align="center" valign="top">
 <h4>✂️ Split Book Spreads &amp; Scans</h4>
-<a href="docs/screenshots/current/split-editor.png"><img src="docs/screenshots/current/split-editor.png" width="260" alt="Split Book Spreads" /></a>
+<a href="docs/screenshots/current/split-editor.png"><img src="docs/screenshots/current/split-editor.png" width="380" alt="Split Book Spreads" /></a>
 <p>Divide scanned spreads into individual pages. Choose left-to-right, right-to-left, or vertical splits.</p>
-</td>
-<td width="33%" align="center" valign="top">
-<h4>🧹 Page Cleanup &amp; Straightening</h4>
-<a href="docs/screenshots/current/cleanup-editor.png"><img src="docs/screenshots/current/cleanup-editor.png" width="260" alt="Cleanup and Crop" /></a>
-<p>Crop irregular borders, adjust margins, and straighten tilted scans visually.</p>
 </td>
 </tr>
 <tr>
-<td width="33%" align="center" valign="top">
+<td width="50%" align="center" valign="top">
+<h4>🧹 Page Cleanup &amp; Straightening</h4>
+<a href="docs/screenshots/current/cleanup-editor.png"><img src="docs/screenshots/current/cleanup-editor.png" width="380" alt="Cleanup and Crop" /></a>
+<p>Crop irregular borders, adjust margins, and straighten tilted scans visually.</p>
+</td>
+<td width="50%" align="center" valign="top">
 <h4>🗜️ PDF Compression</h4>
-<a href="docs/screenshots/current/compress-options.png"><img src="docs/screenshots/current/compress-options.png" width="260" alt="Compression Options" /></a>
+<a href="docs/screenshots/current/compress-options.png"><img src="docs/screenshots/current/compress-options.png" width="380" alt="Compression Options" /></a>
 <p>Choose Lossless, Balanced, or Maximum compression. Lossy levels trade image detail for smaller files.</p>
 </td>
-<td width="33%"></td>
-<td width="33%"></td>
 </tr>
 </table>
 
