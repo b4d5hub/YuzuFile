@@ -16,6 +16,43 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 
+# Secrets and machine-local credentials (templates may be committed).
+.env
+.env.*
+!.env.example
+!.env.template
+credentials.json
+credentials.*.json
+secrets.json
+secrets.*.json
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+.aws/
+
+# Local app stores, diagnostics, and interrupted downloads.
+/library/
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.db-wal
+*.db-shm
+*.log
+*.partial
+*.part
+
+# Superseded local screenshot experiments; use scripts/capture_readme.py.
+/scripts/capture_fresh_screenshots.py
+/scripts/render_fresh_tray.py
+/scripts/render_fresh_yuzufile_shots.py
+
 # Tesseract data
 vendor/tessdata/*.traineddata
 vendor/tessdata-best/

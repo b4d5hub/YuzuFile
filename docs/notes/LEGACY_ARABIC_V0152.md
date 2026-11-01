@@ -43,7 +43,7 @@ Arabic fallback, hybrid OCR markers, rejection when recovery is unavailable,
 valid English preservation and no duplicate garbage in coverage recovery.
 `scripts/verify_legacy_arabic_word.py` exercises the real local OCR models.
 
-The user supplied `ktab.pdf`, a five-page file using Type 3 Arabic fonts. Its
+A five-page test document used Type 3 Arabic fonts. Its
 page 3 reproduced the screenshot. Fast OCR missed most of its vocalized body;
 detailed OCR recovered readable Arabic but still made spelling and vowel-mark
 errors. The source PDF remains authoritative. These changes fix the Latin

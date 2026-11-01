@@ -22,5 +22,5 @@ Regenerate from the repository root with:
 ```
 
 Inspect every resulting image before committing. The script does not run OCR or
-pretend to show successful conversions. Older images in the parent directory are
-not used by the current README.
+pretend to show successful conversions. Superseded captures are kept in Git
+history rather than alongside the current images.
